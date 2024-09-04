@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Creepy/Mesh.obj: src/Creepy/Mesh.cpp.obj
+.PHONY : src/Creepy/Mesh.obj
+
+# target to build an object file
+src/Creepy/Mesh.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj
+.PHONY : src/Creepy/Mesh.cpp.obj
+
+src/Creepy/Mesh.i: src/Creepy/Mesh.cpp.i
+.PHONY : src/Creepy/Mesh.i
+
+# target to preprocess a source file
+src/Creepy/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.i
+.PHONY : src/Creepy/Mesh.cpp.i
+
+src/Creepy/Mesh.s: src/Creepy/Mesh.cpp.s
+.PHONY : src/Creepy/Mesh.s
+
+# target to generate assembly for a file
+src/Creepy/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.s
+.PHONY : src/Creepy/Mesh.cpp.s
+
 src/Creepy/Renderer.obj: src/Creepy/Renderer.cpp.obj
 .PHONY : src/Creepy/Renderer.obj
 
@@ -260,6 +284,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Creepy/Mesh.obj
+	@echo ... src/Creepy/Mesh.i
+	@echo ... src/Creepy/Mesh.s
 	@echo ... src/Creepy/Renderer.obj
 	@echo ... src/Creepy/Renderer.i
 	@echo ... src/Creepy/Renderer.s

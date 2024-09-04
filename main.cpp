@@ -1,4 +1,5 @@
 #include <print>
+#include <utility>
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 #include <Creepy/Renderer.hpp>
@@ -39,7 +40,7 @@ int main(){
     auto mapFile = WAD::readMap("E1M1", wadFile.value());
 
     glm::vec2 outMin{20.0f, 20.0f};
-    glm::vec2 outMax{width - 20.0f, height - 20.0f};
+    glm::vec2 outMax{width - 10.0f, height - 10.0f};
 
     std::vector<glm::vec2> reMapVertex(mapFile.value().vertices.size());
 
@@ -78,6 +79,16 @@ int main(){
         }
 
         Renderer::clearRenderer(eye);
+
+        for(auto l : mapFile.value().lineDefs){
+            glm::vec4 color{1.0f, 0.0f, 0.0f, 1.0f};
+            
+            if(l.flags & std::to_underlying(LineDefFormat::TWO_SIDE)){
+                color.r = 0.0f;
+                color.g = 1.0f;
+            }
+            Renderer::drawLine(reMapVertex.at(l.startIndex), reMapVertex.at(l.endIndex), 5.0f, color);
+        }
 
         for(auto v : reMapVertex){
             Renderer::drawPoint(v, 5.0f, {1.0f, 1.0f, 1.0f, 1.0f});

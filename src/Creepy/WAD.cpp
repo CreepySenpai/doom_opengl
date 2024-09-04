@@ -64,8 +64,8 @@ int WAD::findLump(std::string_view lumpName, const WAD& wadFile) {
 }
 
 constexpr int ThingsIndex{1};
-constexpr int SideDefsIndex{2};
-constexpr int LineDefsIndex{3};
+constexpr int LineDefsIndex{2};
+constexpr int SideDefsIndex{3};
 constexpr int VertexesIndex{4};
 constexpr int SegsIndex{5};
 constexpr int SSectors{6};
@@ -74,6 +74,7 @@ constexpr int Sectors{8};
 
 
 static void readVertices(Map& map, const Lump& lump);
+static void readLineDefs(Map& map, const Lump& lump);
 
 std::optional<Map> WAD::readMap(std::string_view mapName, const WAD& wadFile) {
     Map map{};
@@ -86,16 +87,18 @@ std::optional<Map> WAD::readMap(std::string_view mapName, const WAD& wadFile) {
     std::println("Found Map: {}", mapIndex);
 
     readVertices(map, wadFile.lumps.at(mapIndex + VertexesIndex));
-
-    for(auto v : map.vertices){
-        std::println("{} - {}", v.x, v.y);
-    }
+    
+    readLineDefs(map, wadFile.lumps.at(mapIndex + LineDefsIndex));
+    
+    // for(auto v : map.vertices){
+    //     std::println("{} - {}", v.x, v.y);
+    // }
 
     return map;
 }
 
 void readVertices(Map& map, const Lump& lump){
-    map.vertices.resize(lump.size / 4);
+    map.vertices.resize(lump.size / 4);     // X Y: 4 bytes
 
     map.min.x = std::numeric_limits<float>::infinity();
     map.min.y = std::numeric_limits<float>::infinity();
@@ -112,14 +115,34 @@ void readVertices(Map& map, const Lump& lump){
         if(map.vertices.at(j).x < map.min.x){
             map.min.x = map.vertices.at(j).x;
         }
+
         if(map.vertices.at(j).y < map.min.y){
             map.min.y = map.vertices.at(j).y;
         }
+
         if(map.vertices.at(j).x > map.max.x){
             map.max.x = map.vertices.at(j).x;
         }
+
         if(map.vertices.at(j).y > map.max.y){
             map.max.y = map.vertices.at(j).y;
         }
     }
+}
+
+void readLineDefs(Map& map, const Lump& lump) {
+    map.lineDefs.resize(lump.size / 14);    // Some Struct: 14 bytes
+
+    std::println("Lump Size: {}", lump.size);
+    std::println("Lump Size Div: {}", lump.size / 14);
+    for(size_t i{}, j{}; i < lump.size; i += 14, ++j){
+
+        map.lineDefs.at(j).startIndex = static_cast<uint16_t>(lump.data.at(i)) | static_cast<uint16_t>(lump.data.at(i + 1)) << 8;
+        map.lineDefs.at(j).endIndex = static_cast<uint16_t>(lump.data.at(i + 2)) | static_cast<uint16_t>(lump.data.at(i + 3)) << 8;
+        map.lineDefs.at(j).flags = static_cast<uint16_t>(lump.data.at(i + 4)) | static_cast<uint16_t>(lump.data.at(i + 5)) << 8;
+    }
+
+    // for(auto k : map.lineDefs){
+    //     std::println("{} - {}", k.startIndex, k.endIndex);
+    // }
 }
