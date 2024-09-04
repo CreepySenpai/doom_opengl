@@ -1,0 +1,21 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "D:/WorkSpace/Game Project/C++ Games/Doom/build",
+	"dir-cur-src" : "D:/WorkSpace/Game Project/C++ Games/Doom",
+	"dir-top-bld" : "D:/WorkSpace/Game Project/C++ Games/Doom/build",
+	"dir-top-src" : "D:/WorkSpace/Game Project/C++ Games/Doom",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"D:\\WorkSpace\\Game Project\\C++ Games\\Doom\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "D:/WorkSpace/Game Project/C++ Games/Doom/build/CMakeFiles/Doom.dir"
+}

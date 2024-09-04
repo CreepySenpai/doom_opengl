@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
