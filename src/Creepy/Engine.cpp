@@ -30,7 +30,7 @@ void Engine::Update(float deltaTime) {
     if(Input::IsKeyPressed(KeyCode::KEY_UP)){
         s_camera.Position += s_camera.Forward * playerSpeed * deltaTime;
     }
-    
+
     if(Input::IsKeyPressed(KeyCode::KEY_DOWN)){
         s_camera.Position -= s_camera.Forward * playerSpeed * deltaTime;
     }
@@ -73,6 +73,7 @@ void Engine::Update(float deltaTime) {
 void Engine::Render(){
 
     Renderer::setViewMatrix(glm::lookAtLH(s_camera.Position, s_camera.Position + s_camera.Forward, s_camera.Up));
+
 
     Renderer::drawQuad({0.0f, 0.0f}, {30.0f, 40.0f}, 0.0f, {1.0f, 0.0f, 0.0f, 1.0f});
 }
