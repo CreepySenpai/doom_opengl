@@ -1,37 +1,55 @@
 [
 {
   "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
-  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\main.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\main.cpp\"",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\main.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\main.cpp\"",
   "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/main.cpp",
   "output": "CMakeFiles/Doom.dir/main.cpp.obj"
 },
 {
   "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
-  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Mesh.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Mesh.cpp\"",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Camera.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Camera.cpp\"",
+  "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/src/Creepy/Camera.cpp",
+  "output": "CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj"
+},
+{
+  "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Engine.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Engine.cpp\"",
+  "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/src/Creepy/Engine.cpp",
+  "output": "CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj"
+},
+{
+  "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Input.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Input.cpp\"",
+  "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/src/Creepy/Input.cpp",
+  "output": "CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj"
+},
+{
+  "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Mesh.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Mesh.cpp\"",
   "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/src/Creepy/Mesh.cpp",
   "output": "CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj"
 },
 {
   "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
-  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Renderer.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Renderer.cpp\"",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Renderer.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Renderer.cpp\"",
   "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/src/Creepy/Renderer.cpp",
   "output": "CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj"
 },
 {
   "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
-  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Utils.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Utils.cpp\"",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\Utils.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\Utils.cpp\"",
   "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/src/Creepy/Utils.cpp",
   "output": "CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj"
 },
 {
   "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
-  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\WAD.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\WAD.cpp\"",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\g++.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_CXX.rsp -g -std=gnu++26 -o CMakeFiles\\Doom.dir\\src\\Creepy\\WAD.cpp.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\Creepy\\WAD.cpp\"",
   "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/src/Creepy/WAD.cpp",
   "output": "CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.obj"
 },
 {
   "directory": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build",
-  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\gcc.exe -DGLFW_INCLUDE_NONE @CMakeFiles/Doom.dir/includes_C.rsp -g -std=gnu2x -o CMakeFiles\\Doom.dir\\src\\glad\\glad.c.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\glad\\glad.c\"",
+  "command": "D:\\Enviroments\\mingw64_msvcrt\\bin\\gcc.exe -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL @CMakeFiles/Doom.dir/includes_C.rsp -g -std=gnu2x -o CMakeFiles\\Doom.dir\\src\\glad\\glad.c.obj -c \"D:\\WorkSpace\\Game Project\\C++ Games\\Doom_OpenGL\\src\\glad\\glad.c\"",
   "file": "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/src/glad/glad.c",
   "output": "CMakeFiles/Doom.dir/src/glad/glad.c.obj"
 }

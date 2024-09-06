@@ -479,12 +479,79 @@ CMakeFiles/Doom.dir/main.cpp.obj: \
  D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtc/type_ptr.inl \
  D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtc/ulp.hpp \
  D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtc/ulp.inl \
- D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/WAD.hpp \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/filesystem \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/fs_fwd.h \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/chrono.h \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/ratio \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/fs_path.h \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/associated_min_max.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/associated_min_max.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/bit.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/bit.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/closest_point.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/closest_point.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/color_encoding.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/detail/setup.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/color_encoding.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/color_space.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/color_space.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/color_space_YCoCg.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/color_space_YCoCg.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/common.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/common.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/compatibility.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/compatibility.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/component_wise.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/component_wise.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/dual_quaternion.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/dual_quaternion.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/easing.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/easing.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/euler_angles.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/euler_angles.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/extend.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/extend.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/extended_min_max.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/extended_min_max.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/fast_exponential.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/fast_exponential.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/fast_square_root.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/fast_square_root.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/fast_trigonometry.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/fast_trigonometry.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/functions.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/functions.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/gradient_paint.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/optimum_pow.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/optimum_pow.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/gradient_paint.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/handed_coordinate_space.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/handed_coordinate_space.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/hash.hpp \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/functional \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/std_function.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/unordered_map \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/unordered_map.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/hashtable.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/hashtable_policy.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/ext/aligned_buffer.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/node_handle.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/erase_if.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/vector \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_uninitialized.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_vector.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_bvector.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/vector.tcc \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/move_only_function.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/mofunc_impl.h \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/hash.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/integer.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/integer.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/intersect.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/vector_query.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/vector_query.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/intersect.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/io.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/quaternion.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/norm.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/norm.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/quaternion.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/io.inl \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/iomanip \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/quoted_string.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/sstream \
@@ -496,19 +563,83 @@ CMakeFiles/Doom.dir/main.cpp.obj: \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/ostream.tcc \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/istream.tcc \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/sstream.tcc \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/type_trait.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/type_trait.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/log_base.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/log_base.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_cross_product.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_cross_product.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_decompose.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_decompose.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/transform.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/transform.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_factorisation.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_factorisation.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_interpolation.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_interpolation.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_major_storage.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_major_storage.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_operation.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_operation.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_query.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/matrix_query.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/mixed_product.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/mixed_product.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/normal.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/normal.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/normalize_dot.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/normalize_dot.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/number_precision.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/orthonormalize.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/orthonormalize.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/pca.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/pca.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/perpendicular.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/projection.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/projection.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/perpendicular.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/polar_coordinates.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/polar_coordinates.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/raw_data.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/raw_data.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/rotate_normalized_axis.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/rotate_normalized_axis.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/rotate_vector.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/rotate_vector.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/spline.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/spline.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/std_based_type.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/std_based_type.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/string_cast.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/string_cast.inl \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/cstdarg \
+ D:/Enviroments/mingw64_msvcrt/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
+ D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/stdarg.h \
+ D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/transform2.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/transform2.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/vec_swizzle.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/vector_angle.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/vector_angle.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/wrap.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/wrap.inl \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/scalar_multiplication.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/range.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/WAD.hpp \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/filesystem \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/fs_fwd.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/chrono.h \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/ratio \
+ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/fs_path.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/codecvt \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/ext/concurrence.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/shared_ptr.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/shared_ptr_base.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/allocated_ptr.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/unique_ptr.h \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/ext/aligned_buffer.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/align.h \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_uninitialized.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/fs_dir.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/fs_ops.h \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/vector \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_vector.h \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_bvector.h \
- D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/vector.tcc \
- D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Map.hpp
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Map.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Engine.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Input.hpp

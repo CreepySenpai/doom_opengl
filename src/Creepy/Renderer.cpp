@@ -7,17 +7,16 @@
 #include <glm/glm.hpp>
 
 
-
 float s_width{}, s_height;
 GLuint s_program{};
 GLuint s_modelMatrixLocation{};
 GLuint s_viewMatrixLocation{};
+GLuint s_projectionMatrixLocation{};
 GLuint s_colorLocation{};
 Mesh s_quadMesh{};
 
 void initShaders();
 void initQuad();
-void initProjection();
 
 void Renderer::initRenderer(int width, int height) {
     s_width = static_cast<float>(width);
@@ -27,18 +26,22 @@ void Renderer::initRenderer(int width, int height) {
 
     initShaders();
     initQuad();
-    initProjection();
 }
 
-void Renderer::clearRenderer(glm::vec3 eye) {
+void Renderer::clearRenderer() {
     glClear(GL_COLOR_BUFFER_BIT);
-    glm::mat4 view = glm::lookAtLH(eye, glm::vec3{0.0f, 0.0f, 0.0f}, glm::vec3{0.0f, 1.0f, 0.0f});
-    s_viewMatrixLocation = glGetUniformLocation(s_program, "viewMatrix");
-    glUniformMatrix4fv(s_viewMatrixLocation, 1, GL_FALSE, glm::value_ptr(view));
 }
 
-void setViewMatrix(const glm::mat4& viewMatrix) {
+void Renderer::setViewMatrix(const glm::mat4& viewMatrix) {
     glUniformMatrix4fv(s_viewMatrixLocation, 1, GL_FALSE, glm::value_ptr(viewMatrix));
+}
+
+void Renderer::setProjectionMatrix(const glm::mat4& projectionMatrix) {
+    glUniformMatrix4fv(s_projectionMatrixLocation, 1, GL_FALSE, glm::value_ptr(projectionMatrix));
+}
+
+glm::ivec2 Renderer::getSize() {
+    return {s_width, s_height};
 }
 
 void initShaders() {
@@ -50,7 +53,8 @@ void initShaders() {
     glUseProgram(s_program);
 
     s_modelMatrixLocation = glGetUniformLocation(s_program, "modelMatrix");
-    // s_viewMatrixLocation = glGetUniformLocation(s_program, "viewMatrix");
+    s_viewMatrixLocation = glGetUniformLocation(s_program, "viewMatrix");
+    s_projectionMatrixLocation = glGetUniformLocation(s_program, "projectionMatrix");
     s_colorLocation = glGetUniformLocation(s_program, "myColor");
 }
 
@@ -68,12 +72,6 @@ void initQuad() {
     };
 
     s_quadMesh = Mesh::createMesh(vertices, indices);
-}
-
-void initProjection() {
-    auto pro = glm::orthoLH(0.0f, s_width, 0.0f, s_height, -100.0f, 100.0f);
-    const GLuint projectionUniformLoc = glGetUniformLocation(s_program, "projectionMatrix");
-    glUniformMatrix4fv(projectionUniformLoc, 1, GL_FALSE, glm::value_ptr(pro));
 }
 
 void Renderer::drawPoint(glm::vec2 point, float size, const glm::vec4& color) {
@@ -95,12 +93,6 @@ void Renderer::drawLine(glm::vec2 point0, glm::vec2 point1, float lineWidth, con
     const glm::mat4 rotationMatrix = glm::rotate(glm::identity<glm::mat4>(), angle, glm::vec3{0.0f, 0.0f, 1.0f});
 
     drawMesh(s_quadMesh, translationMatrix * rotationMatrix * scaleMatrix, color);
-    // auto mo = tran * rot * scale;
-
-    // glUniform4fv(s_colorLocation, 1, glm::value_ptr(color));
-    // glUniformMatrix4fv(s_modelMatrixLocation, 1, GL_FALSE, glm::value_ptr(mo));
-    // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
-
 }
 
 void Renderer::drawQuad(glm::vec2 center, glm::vec2 size, float angle, const glm::vec4& color) {
@@ -109,13 +101,6 @@ void Renderer::drawQuad(glm::vec2 center, glm::vec2 size, float angle, const glm
     const glm::mat4 rotationMatrix = glm::rotate(glm::identity<glm::mat4>(), glm::radians(angle), glm::vec3{0.0f, 0.0f, 1.0f});
 
     drawMesh(s_quadMesh, translationMatrix * rotationMatrix * scaleMatrix, color);
-
-    // auto mo = tran * rot * scale;
-
-    // glUniform4fv(s_colorLocation, 1, glm::value_ptr(color));
-    // glUniformMatrix4fv(s_modelMatrixLocation, 1, GL_FALSE, glm::value_ptr(mo));
-
-    // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
 }
 
 void Renderer::drawMesh(const Mesh& mesh, const glm::mat4& transform, const glm::vec4& color) {

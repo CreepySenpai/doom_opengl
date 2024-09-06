@@ -83,11 +83,56 @@ CMakeFiles/Doom.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Doom.dir/main.cpp.s"
 	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\main.cpp" -o CMakeFiles\Doom.dir\main.cpp.s
 
+CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj: CMakeFiles/Doom.dir/flags.make
+CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj: CMakeFiles/Doom.dir/includes_CXX.rsp
+CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj: D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/Camera.cpp
+CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj: CMakeFiles/Doom.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj -MF CMakeFiles\Doom.dir\src\Creepy\Camera.cpp.obj.d -o CMakeFiles\Doom.dir\src\Creepy\Camera.cpp.obj -c "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Camera.cpp"
+
+CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.i"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Camera.cpp" > CMakeFiles\Doom.dir\src\Creepy\Camera.cpp.i
+
+CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.s"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Camera.cpp" -o CMakeFiles\Doom.dir\src\Creepy\Camera.cpp.s
+
+CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: CMakeFiles/Doom.dir/flags.make
+CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: CMakeFiles/Doom.dir/includes_CXX.rsp
+CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/Engine.cpp
+CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: CMakeFiles/Doom.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj -MF CMakeFiles\Doom.dir\src\Creepy\Engine.cpp.obj.d -o CMakeFiles\Doom.dir\src\Creepy\Engine.cpp.obj -c "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Engine.cpp"
+
+CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.i"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Engine.cpp" > CMakeFiles\Doom.dir\src\Creepy\Engine.cpp.i
+
+CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.s"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Engine.cpp" -o CMakeFiles\Doom.dir\src\Creepy\Engine.cpp.s
+
+CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj: CMakeFiles/Doom.dir/flags.make
+CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj: CMakeFiles/Doom.dir/includes_CXX.rsp
+CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj: D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/Input.cpp
+CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj: CMakeFiles/Doom.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj -MF CMakeFiles\Doom.dir\src\Creepy\Input.cpp.obj.d -o CMakeFiles\Doom.dir\src\Creepy\Input.cpp.obj -c "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Input.cpp"
+
+CMakeFiles/Doom.dir/src/Creepy/Input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Doom.dir/src/Creepy/Input.cpp.i"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Input.cpp" > CMakeFiles\Doom.dir\src\Creepy\Input.cpp.i
+
+CMakeFiles/Doom.dir/src/Creepy/Input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Doom.dir/src/Creepy/Input.cpp.s"
+	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Input.cpp" -o CMakeFiles\Doom.dir\src\Creepy\Input.cpp.s
+
 CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj: CMakeFiles/Doom.dir/flags.make
 CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj: CMakeFiles/Doom.dir/includes_CXX.rsp
 CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj: D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/Mesh.cpp
 CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj: CMakeFiles/Doom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj"
 	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj -MF CMakeFiles\Doom.dir\src\Creepy\Mesh.cpp.obj.d -o CMakeFiles\Doom.dir\src\Creepy\Mesh.cpp.obj -c "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Mesh.cpp"
 
 CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.i: cmake_force
@@ -102,7 +147,7 @@ CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj: CMakeFiles/Doom.dir/flags.make
 CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj: CMakeFiles/Doom.dir/includes_CXX.rsp
 CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj: D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/Renderer.cpp
 CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj: CMakeFiles/Doom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj"
 	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj -MF CMakeFiles\Doom.dir\src\Creepy\Renderer.cpp.obj.d -o CMakeFiles\Doom.dir\src\Creepy\Renderer.cpp.obj -c "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Renderer.cpp"
 
 CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.i: cmake_force
@@ -117,7 +162,7 @@ CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj: CMakeFiles/Doom.dir/flags.make
 CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj: CMakeFiles/Doom.dir/includes_CXX.rsp
 CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj: D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/Utils.cpp
 CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj: CMakeFiles/Doom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj"
 	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj -MF CMakeFiles\Doom.dir\src\Creepy\Utils.cpp.obj.d -o CMakeFiles\Doom.dir\src\Creepy\Utils.cpp.obj -c "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\Utils.cpp"
 
 CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.i: cmake_force
@@ -132,7 +177,7 @@ CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.obj: CMakeFiles/Doom.dir/flags.make
 CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.obj: CMakeFiles/Doom.dir/includes_CXX.rsp
 CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.obj: D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/WAD.cpp
 CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.obj: CMakeFiles/Doom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.obj"
 	D:\Enviroments\mingw64_msvcrt\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.obj -MF CMakeFiles\Doom.dir\src\Creepy\WAD.cpp.obj.d -o CMakeFiles\Doom.dir\src\Creepy\WAD.cpp.obj -c "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\Creepy\WAD.cpp"
 
 CMakeFiles/Doom.dir/src/Creepy/WAD.cpp.i: cmake_force
@@ -147,7 +192,7 @@ CMakeFiles/Doom.dir/src/glad/glad.c.obj: CMakeFiles/Doom.dir/flags.make
 CMakeFiles/Doom.dir/src/glad/glad.c.obj: CMakeFiles/Doom.dir/includes_C.rsp
 CMakeFiles/Doom.dir/src/glad/glad.c.obj: D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/glad/glad.c
 CMakeFiles/Doom.dir/src/glad/glad.c.obj: CMakeFiles/Doom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Doom.dir/src/glad/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Doom.dir/src/glad/glad.c.obj"
 	D:\Enviroments\mingw64_msvcrt\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Doom.dir/src/glad/glad.c.obj -MF CMakeFiles\Doom.dir\src\glad\glad.c.obj.d -o CMakeFiles\Doom.dir\src\glad\glad.c.obj -c "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\src\glad\glad.c"
 
 CMakeFiles/Doom.dir/src/glad/glad.c.i: cmake_force
@@ -161,6 +206,9 @@ CMakeFiles/Doom.dir/src/glad/glad.c.s: cmake_force
 # Object files for target Doom
 Doom_OBJECTS = \
 "CMakeFiles/Doom.dir/main.cpp.obj" \
+"CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj" \
+"CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj" \
+"CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj" \
 "CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj" \
 "CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj" \
 "CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj" \
@@ -171,6 +219,9 @@ Doom_OBJECTS = \
 Doom_EXTERNAL_OBJECTS =
 
 Doom.exe: CMakeFiles/Doom.dir/main.cpp.obj
+Doom.exe: CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj
+Doom.exe: CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj
+Doom.exe: CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj
 Doom.exe: CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj
 Doom.exe: CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj
 Doom.exe: CMakeFiles/Doom.dir/src/Creepy/Utils.cpp.obj
@@ -180,7 +231,7 @@ Doom.exe: CMakeFiles/Doom.dir/build.make
 Doom.exe: CMakeFiles/Doom.dir/linkLibs.rsp
 Doom.exe: CMakeFiles/Doom.dir/objects1.rsp
 Doom.exe: CMakeFiles/Doom.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Doom.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Doom.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Doom.dir\link.txt --verbose=$(VERBOSE)
 	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file D:/Libraries/C++/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "D:/WorkSpace/Game Project/C++ Games/Doom_OpenGL/build/Doom.exe" -installedDir D:/Libraries/C++/vcpkg/installed/x64-windows/debug/bin -OutVariable out
 

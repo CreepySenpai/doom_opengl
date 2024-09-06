@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Doom.dir/main.cpp.obj"
   "CMakeFiles/Doom.dir/main.cpp.obj.d"
+  "CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj"
+  "CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj.d"
+  "CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj"
+  "CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj.d"
+  "CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj"
+  "CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj.d"
   "CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj"
   "CMakeFiles/Doom.dir/src/Creepy/Mesh.cpp.obj.d"
   "CMakeFiles/Doom.dir/src/Creepy/Renderer.cpp.obj"

@@ -152,6 +152,78 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Creepy/Camera.obj: src/Creepy/Camera.cpp.obj
+.PHONY : src/Creepy/Camera.obj
+
+# target to build an object file
+src/Creepy/Camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.obj
+.PHONY : src/Creepy/Camera.cpp.obj
+
+src/Creepy/Camera.i: src/Creepy/Camera.cpp.i
+.PHONY : src/Creepy/Camera.i
+
+# target to preprocess a source file
+src/Creepy/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.i
+.PHONY : src/Creepy/Camera.cpp.i
+
+src/Creepy/Camera.s: src/Creepy/Camera.cpp.s
+.PHONY : src/Creepy/Camera.s
+
+# target to generate assembly for a file
+src/Creepy/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Camera.cpp.s
+.PHONY : src/Creepy/Camera.cpp.s
+
+src/Creepy/Engine.obj: src/Creepy/Engine.cpp.obj
+.PHONY : src/Creepy/Engine.obj
+
+# target to build an object file
+src/Creepy/Engine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj
+.PHONY : src/Creepy/Engine.cpp.obj
+
+src/Creepy/Engine.i: src/Creepy/Engine.cpp.i
+.PHONY : src/Creepy/Engine.i
+
+# target to preprocess a source file
+src/Creepy/Engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.i
+.PHONY : src/Creepy/Engine.cpp.i
+
+src/Creepy/Engine.s: src/Creepy/Engine.cpp.s
+.PHONY : src/Creepy/Engine.s
+
+# target to generate assembly for a file
+src/Creepy/Engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.s
+.PHONY : src/Creepy/Engine.cpp.s
+
+src/Creepy/Input.obj: src/Creepy/Input.cpp.obj
+.PHONY : src/Creepy/Input.obj
+
+# target to build an object file
+src/Creepy/Input.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Input.cpp.obj
+.PHONY : src/Creepy/Input.cpp.obj
+
+src/Creepy/Input.i: src/Creepy/Input.cpp.i
+.PHONY : src/Creepy/Input.i
+
+# target to preprocess a source file
+src/Creepy/Input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Input.cpp.i
+.PHONY : src/Creepy/Input.cpp.i
+
+src/Creepy/Input.s: src/Creepy/Input.cpp.s
+.PHONY : src/Creepy/Input.s
+
+# target to generate assembly for a file
+src/Creepy/Input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/src/Creepy/Input.cpp.s
+.PHONY : src/Creepy/Input.cpp.s
+
 src/Creepy/Mesh.obj: src/Creepy/Mesh.cpp.obj
 .PHONY : src/Creepy/Mesh.obj
 
@@ -284,6 +356,15 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Creepy/Camera.obj
+	@echo ... src/Creepy/Camera.i
+	@echo ... src/Creepy/Camera.s
+	@echo ... src/Creepy/Engine.obj
+	@echo ... src/Creepy/Engine.i
+	@echo ... src/Creepy/Engine.s
+	@echo ... src/Creepy/Input.obj
+	@echo ... src/Creepy/Input.i
+	@echo ... src/Creepy/Input.s
 	@echo ... src/Creepy/Mesh.obj
 	@echo ... src/Creepy/Mesh.i
 	@echo ... src/Creepy/Mesh.s

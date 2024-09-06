@@ -80,12 +80,12 @@ clean: CMakeFiles/Doom.dir/clean
 CMakeFiles/Doom.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Doom.dir\build.make CMakeFiles/Doom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target Doom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Doom"
 .PHONY : CMakeFiles/Doom.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Doom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Doom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\WorkSpace\Game Project\C++ Games\Doom_OpenGL\build\CMakeFiles" 0
 .PHONY : CMakeFiles/Doom.dir/rule

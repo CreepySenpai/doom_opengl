@@ -25,4 +25,6 @@ target_link_libraries(${PROJECT_NAME} PUBLIC glfw3dll stdc++exp opengl32)
 
 add_compile_definitions(GLFW_INCLUDE_NONE)
 
+add_compile_definitions(GLM_ENABLE_EXPERIMENTAL)
+
 add_compile_options(-fuse-ld=lld)

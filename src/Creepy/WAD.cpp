@@ -97,6 +97,11 @@ std::optional<Map> WAD::readMap(std::string_view mapName, const WAD& wadFile) {
     return map;
 }
 
+template <typename T>
+T readBytes(std::span<const std::byte> data, size_t index){
+    return static_cast<T>(data.at(index)) | static_cast<T>(data.at(index + 1)) << 8;
+}
+
 void readVertices(Map& map, const Lump& lump){
     map.vertices.resize(lump.size / 4);     // X Y: 4 bytes
 
@@ -107,8 +112,8 @@ void readVertices(Map& map, const Lump& lump){
     map.max.y = -std::numeric_limits<float>::infinity();
     
     for(size_t i{}, j{}; i < lump.size; i += 4, ++j){
-        const int16_t valX = static_cast<int16_t>(lump.data.at(i)) | static_cast<int16_t>(lump.data.at(i + 1)) << 8;
-        const int16_t valY = static_cast<int16_t>(lump.data.at(i + 2)) | static_cast<int16_t>(lump.data.at(i + 3)) << 8;
+        const int16_t valX = readBytes<int16_t>(lump.data, i);
+        const int16_t valY = readBytes<int16_t>(lump.data, i + 2);
         map.vertices.at(j).x = static_cast<float>(valX);
         map.vertices.at(j).y = static_cast<float>(valY);
 
@@ -136,12 +141,11 @@ void readLineDefs(Map& map, const Lump& lump) {
     std::println("Lump Size: {}", lump.size);
     std::println("Lump Size Div: {}", lump.size / 14);
     for(size_t i{}, j{}; i < lump.size; i += 14, ++j){
-
-        map.lineDefs.at(j).startIndex = static_cast<uint16_t>(lump.data.at(i)) | static_cast<uint16_t>(lump.data.at(i + 1)) << 8;
-        map.lineDefs.at(j).endIndex = static_cast<uint16_t>(lump.data.at(i + 2)) | static_cast<uint16_t>(lump.data.at(i + 3)) << 8;
-        map.lineDefs.at(j).flags = static_cast<uint16_t>(lump.data.at(i + 4)) | static_cast<uint16_t>(lump.data.at(i + 5)) << 8;
+        map.lineDefs.at(j).startIndex = readBytes<uint16_t>(lump.data, i);
+        map.lineDefs.at(j).endIndex = readBytes<uint16_t>(lump.data, i + 2);
+        map.lineDefs.at(j).flags = readBytes<uint16_t>(lump.data, i + 4);
     }
-
+    
     // for(auto k : map.lineDefs){
     //     std::println("{} - {}", k.startIndex, k.endIndex);
     // }
