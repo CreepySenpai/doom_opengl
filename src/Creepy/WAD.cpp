@@ -68,13 +68,15 @@ constexpr int LineDefsIndex{2};
 constexpr int SideDefsIndex{3};
 constexpr int VertexesIndex{4};
 constexpr int SegsIndex{5};
-constexpr int SSectors{6};
-constexpr int Nodes{7};
-constexpr int Sectors{8};
+constexpr int SSectorsIndex{6};
+constexpr int NodesIndex{7};
+constexpr int SectorsIndex{8};
 
 
 static void readVertices(Map& map, const Lump& lump);
 static void readLineDefs(Map& map, const Lump& lump);
+static void readSideDefs(Map& map, const Lump& lump);
+static void readSectors(Map& map, const Lump& lump);
 
 std::optional<Map> WAD::readMap(std::string_view mapName, const WAD& wadFile) {
     Map map{};
@@ -89,10 +91,10 @@ std::optional<Map> WAD::readMap(std::string_view mapName, const WAD& wadFile) {
     readVertices(map, wadFile.lumps.at(mapIndex + VertexesIndex));
     
     readLineDefs(map, wadFile.lumps.at(mapIndex + LineDefsIndex));
-    
-    // for(auto v : map.vertices){
-    //     std::println("{} - {}", v.x, v.y);
-    // }
+
+    readSideDefs(map, wadFile.lumps.at(mapIndex + SideDefsIndex));
+
+    readSectors(map, wadFile.lumps.at(mapIndex + SectorsIndex));
 
     return map;
 }
@@ -136,7 +138,7 @@ void readVertices(Map& map, const Lump& lump){
 }
 
 void readLineDefs(Map& map, const Lump& lump) {
-    map.lineDefs.resize(lump.size / 14);    // Some Struct: 14 bytes
+    map.lineDefs.resize(lump.size / 14);    // Each LineDef: 14 bytes
 
     std::println("Lump Size: {}", lump.size);
     std::println("Lump Size Div: {}", lump.size / 14);
@@ -144,9 +146,26 @@ void readLineDefs(Map& map, const Lump& lump) {
         map.lineDefs.at(j).startIndex = readBytes<uint16_t>(lump.data, i);
         map.lineDefs.at(j).endIndex = readBytes<uint16_t>(lump.data, i + 2);
         map.lineDefs.at(j).flags = readBytes<uint16_t>(lump.data, i + 4);
+        map.lineDefs.at(j).frontSideDef = readBytes<uint16_t>(lump.data, i + 10);
+        map.lineDefs.at(j).backSideDef = readBytes<uint16_t>(lump.data, i + 12);
     }
-    
-    // for(auto k : map.lineDefs){
-    //     std::println("{} - {}", k.startIndex, k.endIndex);
-    // }
+}
+
+void readSideDefs(Map& map, const Lump& lump) {
+    map.sideDefs.resize(lump.size / 30);    // Each SideDef: 30 bytes
+
+    std::println("Side Def: {}", map.sideDefs.size());
+
+    for(size_t i{}, j{}; i < lump.size; i += 30, ++j){
+        map.sideDefs.at(j).sectorIndex = readBytes<uint16_t>(lump.data, i + 28);
+    }
+}
+
+void readSectors(Map& map, const Lump& lump) {
+    map.sectors.resize(lump.size / 26);     // Each Sector: 26 bytes
+
+    for(size_t i{}, j{}; i < lump.size; i += 26, ++j){
+        map.sectors.at(j).floor = readBytes<int16_t>(lump.data, i);
+        map.sectors.at(j).ceiling = readBytes<int16_t>(lump.data, i + 2);
+    }
 }

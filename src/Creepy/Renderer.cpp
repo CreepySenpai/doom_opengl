@@ -7,7 +7,7 @@
 #include <glm/glm.hpp>
 
 
-float s_width{}, s_height;
+float s_width{}, s_height{};
 GLuint s_program{};
 GLuint s_modelMatrixLocation{};
 GLuint s_viewMatrixLocation{};
@@ -15,21 +15,22 @@ GLuint s_projectionMatrixLocation{};
 GLuint s_colorLocation{};
 Mesh s_quadMesh{};
 
-void initShaders();
-void initQuad();
+static void initShaders();
+static void initQuad();
 
 void Renderer::initRenderer(int width, int height) {
     s_width = static_cast<float>(width);
     s_height = static_cast<float>(height);
 
     glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
+    glEnable(GL_DEPTH_TEST);
 
     initShaders();
     initQuad();
 }
 
 void Renderer::clearRenderer() {
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
 void Renderer::setViewMatrix(const glm::mat4& viewMatrix) {
@@ -60,10 +61,10 @@ void initShaders() {
 
 void initQuad() {
     constexpr Vertex vertices[]{
-        glm::vec3{0.5f, 0.5f, 0.0f},
-        glm::vec3{0.5f, -0.5f, 0.0f},
-        glm::vec3{-0.5f, -0.5f, 0.0f},
-        glm::vec3{-0.5f, 0.5f, 0.0f}
+        glm::vec3{1.0f, 1.0f, 0.0f},
+        glm::vec3{0.0f, 1.0f, 0.0f},
+        glm::vec3{0.0f, 0.0f, 0.0f},
+        glm::vec3{1.0f, 0.0f, 0.0f}
     };
 
     constexpr uint32_t indices[]{

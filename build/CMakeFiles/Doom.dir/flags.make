@@ -7,11 +7,11 @@ C_DEFINES = -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL
 
 C_INCLUDES = @CMakeFiles/Doom.dir/includes_C.rsp
 
-C_FLAGS = -g -std=gnu2x
+C_FLAGS = -O3 -DNDEBUG -std=gnu2x
 
 CXX_DEFINES = -DGLFW_INCLUDE_NONE -DGLM_ENABLE_EXPERIMENTAL
 
 CXX_INCLUDES = @CMakeFiles/Doom.dir/includes_CXX.rsp
 
-CXX_FLAGS = -g -std=gnu++26
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++26
 

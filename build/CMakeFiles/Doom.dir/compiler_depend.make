@@ -1322,6 +1322,8 @@ CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: D:/WorkSpace/Game\ Project/C++\ G
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/predefined_ops.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/ptr_traits.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/quoted_string.h \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/random.h \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/random.tcc \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/range_access.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/ranges_algobase.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/ranges_base.h \
@@ -1329,6 +1331,7 @@ CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: D:/WorkSpace/Game\ Project/C++\ G
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/ranges_util.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/refwrap.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/requires_hosted.h \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/sat_arith.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/shared_ptr.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/shared_ptr_base.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/specfun.h \
@@ -1344,6 +1347,7 @@ CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: D:/WorkSpace/Game\ Project/C++\ G
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_iterator.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_iterator_base_types.h \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_numeric.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_pair.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_relops.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_tempbuf.h \
@@ -1405,10 +1409,14 @@ CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: D:/WorkSpace/Game\ Project/C++\ G
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/locale \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/new \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/numbers \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/numeric \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/optional \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/ostream \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/print \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/pstl/execution_defs.h \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/pstl/glue_numeric_defs.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/pstl/pstl_config.h \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/random \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/ratio \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/span \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/sstream \
@@ -1448,6 +1456,7 @@ CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: D:/WorkSpace/Game\ Project/C++\ G
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/x86_64-w64-mingw32/bits/messages_members.h \
+  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/x86_64-w64-mingw32/bits/opt_random.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/x86_64-w64-mingw32/bits/time_members.h \
   D:/Enviroments/mingw64_msvcrt/lib/gcc/x86_64-w64-mingw32/14.2.0/include/float.h \
@@ -1457,6 +1466,7 @@ CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: D:/WorkSpace/Game\ Project/C++\ G
   D:/Enviroments/mingw64_msvcrt/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
   D:/Enviroments/mingw64_msvcrt/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   D:/Enviroments/mingw64_msvcrt/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/KHR/khrplatform.h \
   D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/_mingw.h \
   D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/_mingw_mac.h \
   D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/_mingw_off_t.h \
@@ -1507,9 +1517,11 @@ CMakeFiles/Doom.dir/src/Creepy/Engine.cpp.obj: D:/WorkSpace/Game\ Project/C++\ G
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Engine.hpp \
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Input.hpp \
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Map.hpp \
+  D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Mesh.hpp \
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Renderer.hpp \
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/WAD.hpp \
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/GLFW/glfw3.h \
+  D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glad/glad.h \
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/common.hpp \
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/detail/_fixes.hpp \
   D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/detail/_noise.hpp \
@@ -4994,8 +5006,6 @@ D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/mciapi.h:
 
 D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/lzexpand.h:
 
-D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/libloaderapi.h:
-
 D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/ioapiset.h:
 
 D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/interlockedapi.h:
@@ -5021,8 +5031,6 @@ D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/debugapi.h:
 D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/concurrencysal.h:
 
 D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/commdlg.h:
-
-D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/cguid.h:
 
 D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/bcrypt.h:
 
@@ -5186,6 +5194,20 @@ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Utils.hpp:
 
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/Mesh.cpp:
 
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/x86_64-w64-mingw32/bits/opt_random.h:
+
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/random:
+
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/pstl/execution_defs.h:
+
+D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/libloaderapi.h:
+
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/numeric:
+
+D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/cguid.h:
+
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/sat_arith.h:
+
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/src/Creepy/Engine.cpp:
 
 D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/pshpack8.h:
@@ -5231,6 +5253,8 @@ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/string_cast.in
 D:/Enviroments/mingw64_msvcrt/x86_64-w64-mingw32/include/minwinbase.h:
 
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/string_cast.hpp:
+
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/random.h:
 
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/spline.hpp:
 
@@ -5704,6 +5728,8 @@ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/ext/vector_bool2.h
 
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/fwd.hpp:
 
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/random.tcc:
+
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtc/bitfield.inl:
 
 D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
@@ -5984,6 +6010,8 @@ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/ext/matrix_uint4x3
 
 D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_construct.h:
 
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/stl_numeric.h:
+
 D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/cerrno:
 
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/detail/type_mat3x4.inl:
@@ -6057,6 +6085,8 @@ D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/format:
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/ext/vector_double4.hpp:
 
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/gtx/compatibility.inl:
+
+D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/pstl/glue_numeric_defs.h:
 
 D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/glm/mat2x2.hpp:
 
