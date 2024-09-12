@@ -22,6 +22,7 @@ struct SideDef{
 
 struct Sector{
     int16_t floor{}, ceiling{};
+    int16_t lightLevel{};
 };
 
 struct Map{

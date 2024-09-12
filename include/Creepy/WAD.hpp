@@ -4,6 +4,7 @@
 #include <filesystem>
 #include <vector>
 #include "Map.hpp"
+#include "GLMap.hpp"
 
 struct Lump{
     uint32_t size;
@@ -19,5 +20,7 @@ struct WAD{
     static std::optional<WAD> loadFromFile(const std::filesystem::path& filePath);
     static int findLump(std::string_view lumpName, const WAD& wadFile);
     static std::optional<Map> readMap(std::string_view mapName, const WAD& wadFile);
+    static std::optional<GLMap> readGLMap(std::string_view glMapName, const WAD& wadFile);
+    
 };
 

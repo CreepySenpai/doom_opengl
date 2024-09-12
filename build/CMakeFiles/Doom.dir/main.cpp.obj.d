@@ -641,5 +641,6 @@ CMakeFiles/Doom.dir/main.cpp.obj: \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/fs_dir.h \
  D:/Enviroments/mingw64_msvcrt/include/c++/14.2.0/bits/fs_ops.h \
  D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Map.hpp \
+ D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/GLMap.hpp \
  D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Engine.hpp \
  D:/WorkSpace/Game\ Project/C++\ Games/Doom_OpenGL/include/Creepy/Input.hpp

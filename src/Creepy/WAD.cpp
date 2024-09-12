@@ -99,9 +99,16 @@ std::optional<Map> WAD::readMap(std::string_view mapName, const WAD& wadFile) {
     return map;
 }
 
+
 template <typename T>
-T readBytes(std::span<const std::byte> data, size_t index){
-    return static_cast<T>(data.at(index)) | static_cast<T>(data.at(index + 1)) << 8;
+constexpr T readBytes(std::span<const std::byte> data, size_t index){
+    if constexpr(sizeof(T) == 2u){
+        return static_cast<T>(data.at(index)) | static_cast<T>(data.at(index + 1)) << 8;
+    }
+    else if constexpr(sizeof(T) == 4u){
+        return static_cast<T>(data.at(index)) | static_cast<T>(data.at(index + 1)) << 8 | 
+        static_cast<T>(data.at(index + 2)) << 16 | static_cast<T>(data.at(index + 3)) << 24;
+    }
 }
 
 void readVertices(Map& map, const Lump& lump){
@@ -148,6 +155,8 @@ void readLineDefs(Map& map, const Lump& lump) {
         map.lineDefs.at(j).flags = readBytes<uint16_t>(lump.data, i + 4);
         map.lineDefs.at(j).frontSideDef = readBytes<uint16_t>(lump.data, i + 10);
         map.lineDefs.at(j).backSideDef = readBytes<uint16_t>(lump.data, i + 12);
+
+        // std::println("{} - {}", map.lineDefs.at(j).frontSideDef, map.lineDefs.at(j).backSideDef);
     }
 }
 
@@ -167,5 +176,101 @@ void readSectors(Map& map, const Lump& lump) {
     for(size_t i{}, j{}; i < lump.size; i += 26, ++j){
         map.sectors.at(j).floor = readBytes<int16_t>(lump.data, i);
         map.sectors.at(j).ceiling = readBytes<int16_t>(lump.data, i + 2);
+        map.sectors.at(j).lightLevel = readBytes<int16_t>(lump.data, i + 20);
+    }
+}
+
+constexpr int GLVerticesIndex{1};
+constexpr int GLSegsIndex{2};
+constexpr int GLSSectorsIndex{3};
+constexpr int GLNodesIndex{4};
+
+
+static void readGLVertices(GLMap& glMap, const Lump& lump);
+static void readGLSegments(GLMap& glMap, const Lump& lump);
+static void readGLSubSectors(GLMap& glMap, const Lump& lump);
+
+std::optional<GLMap> WAD::readGLMap(std::string_view glMapName, const WAD& wadFile) {
+
+    const int glMapIndex = findLump(glMapName, wadFile);
+
+    if(glMapIndex < 0){
+        return std::nullopt;
+    }
+
+    GLMap glMap{};
+    std::println("Found GLMap: {}", glMapIndex);
+
+    if(std::string{reinterpret_cast<const char*>(wadFile.lumps.at(glMapIndex + GLVerticesIndex).data.data()), 0, 4} != "gNd2"){
+        std::println("Not Found gNd2: {}", std::string{reinterpret_cast<const char*>(wadFile.lumps.at(glMapIndex + GLVerticesIndex).data.data()), 0, 4});
+        // return std::nullopt;
+    }
+
+    if(std::string{reinterpret_cast<const char*>(wadFile.lumps.at(glMapIndex + GLSegsIndex).data.data()), 0, 4} != "gNd3"){
+        // std::println("Not Found gNd3");
+        std::println("Not Found gNd3: {}", std::string{reinterpret_cast<const char*>(wadFile.lumps.at(glMapIndex + GLSegsIndex).data.data()), 0, 4});
+        // return std::nullopt;
+    }
+
+    readGLVertices(glMap, wadFile.lumps.at(glMapIndex + GLVerticesIndex));
+    readGLSegments(glMap, wadFile.lumps.at(glMapIndex + GLSegsIndex));
+    readGLSubSectors(glMap, wadFile.lumps.at(glMapIndex + GLSSectorsIndex));
+
+    return glMap;
+}
+
+void readGLVertices(GLMap& glMap, const Lump& lump) {
+    glMap.vertices.resize((lump.size - 4) / 8);     // X Y: 8 bytes
+
+    glMap.min.x = std::numeric_limits<float>::infinity();
+    glMap.min.y = std::numeric_limits<float>::infinity();
+
+    glMap.max.x = -std::numeric_limits<float>::infinity();
+    glMap.max.y = -std::numeric_limits<float>::infinity();
+    
+    for(size_t i{4}, j{}; i < lump.size; i += 8, ++j){
+        const float valX = static_cast<float>(readBytes<int32_t>(lump.data, i)) / (1 << 16);
+        const float valY = static_cast<float>(readBytes<int32_t>(lump.data, i + 4)) / (1 << 16);
+
+        glMap.vertices.at(j).x = valX;
+        glMap.vertices.at(j).y = valY;
+
+        if(glMap.vertices.at(j).x < glMap.min.x){
+            glMap.min.x = glMap.vertices.at(j).x;
+        }
+
+        if(glMap.vertices.at(j).y < glMap.min.y){
+            glMap.min.y = glMap.vertices.at(j).y;
+        }
+
+        if(glMap.vertices.at(j).x > glMap.max.x){
+            glMap.max.x = glMap.vertices.at(j).x;
+        }
+
+        if(glMap.vertices.at(j).y > glMap.max.y){
+            glMap.max.y = glMap.vertices.at(j).y;
+        }
+    }
+}
+
+void readGLSegments(GLMap& glMap, const Lump& lump) {
+    glMap.segments.resize(lump.size / 10);     // Segment: 10 bytes
+
+    for(uint32_t i{}, j{}; i < lump.size; i += 10, ++j){
+        glMap.segments.at(j).startVertex = readBytes<uint16_t>(lump.data, i);
+        glMap.segments.at(j).endVertex = readBytes<uint16_t>(lump.data, i + 2);
+        glMap.segments.at(j).lineDef = readBytes<uint16_t>(lump.data, i + 4);
+        glMap.segments.at(j).side = readBytes<uint16_t>(lump.data, i + 6);
+    }
+}
+
+void readGLSubSectors(GLMap& glMap, const Lump& lump) {
+    glMap.subSectors.resize(lump.size / 4);     // SubSector: 4 bytes
+
+    for(uint32_t i{}, j{}; i < lump.size; i += 4, ++j){
+        glMap.subSectors.at(j).numSegments = readBytes<uint16_t>(lump.data, i);
+        glMap.subSectors.at(j).firstSegment = readBytes<uint16_t>(lump.data, i + 2);
+
+        // std::println("{} - {}", glMap.subSectors.at(j).numSegments, glMap.subSectors.at(j).firstSegment);
     }
 }
